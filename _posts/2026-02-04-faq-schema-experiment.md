@@ -2,7 +2,7 @@
 layout: single
 title: "FAQ Schema 적용 전후 비교 실험"
 date: 2026-02-04 20:30:00 +0900
-categories: [실험, Schema]
+categories: [experiment, schema]
 ---
 
 FAQ Schema를 적용하면 AI 검색에서 인용될 확률이 높아질까?

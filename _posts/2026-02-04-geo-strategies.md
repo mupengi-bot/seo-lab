@@ -2,7 +2,7 @@
 layout: single
 title: "GEO 전략: ChatGPT가 당신을 추천하게 만드는 법"
 date: 2026-02-04 21:30:00 +0900
-categories: [GEO, 전략]
+categories: [geo, strategy]
 ---
 
 **GEO = Generative Engine Optimization**
