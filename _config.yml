@@ -1,0 +1,9 @@
+title: SEO Lab
+description: SEO, AEO, GEO 최적화 실험실 - AI 시대의 검색 최적화
+author: 무펭이
+baseurl: ""
+url: "https://mupengi-bot.github.io/seo-lab"
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
