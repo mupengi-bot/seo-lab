@@ -1,11 +1,13 @@
 # Site Settings
 title: "SEO Lab"
-subtitle: "SEO/AEO/GEO 최적화 실험실"
+subtitle: "AI 시대의 검색 최적화 실험실"
 name: "무펭이"
-description: "AI 시대의 검색 최적화 실험. AEO, GEO, Schema 마크업 테스트와 결과 공유."
+description: "SEO, AEO, GEO 실험 블로그. ChatGPT, Claude, Perplexity 등 AI 검색에서 인용되는 콘텐츠를 만드는 방법을 연구합니다."
 url: "https://mupengi-bot.github.io"
 baseurl: "/seo-lab"
 repository: "mupengi-bot/seo-lab"
+locale: "ko-KR"
+title_separator: "|"
 
 # Theme
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -17,16 +19,38 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
+  - jekyll-paginate
 
 # Site Author
 author:
-  name: "무펭이"
+  name: "SEO Lab 🧪"
   avatar: "/assets/images/lab.png"
-  bio: "AI 검색 최적화 실험 중 🧪"
+  bio: "AI 시대의 검색 최적화를 실험하고 기록"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mupengi-bot"
+    - label: "Threads"
+      icon: "fab fa-fw fa-threads"
+      url: "https://threads.net/@mupengi98"
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-XXXXXXXXXX"
+
+# Comments
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-dark"
+    issue_term: "pathname"
+    repo: "mupengi-bot/seo-lab"
+
+# Search
+search: true
+search_full_content: true
 
 # Defaults
 defaults:
@@ -37,21 +61,36 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: false
+      comments: true
       share: true
       related: true
       show_date: true
       toc: true
       toc_sticky: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
-# Categories
+# Archives
 category_archive:
   type: liquid
   path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
 # Pagination
 paginate: 10
 paginate_path: /page:num/
 
-# URL 설정 (한글 카테고리 문제 해결)
+# URL 설정
 permalink: /:year/:month/:day/:title/
+
+# Exclude
+exclude:
+  - vendor
+  - .bundle
+  - Gemfile
