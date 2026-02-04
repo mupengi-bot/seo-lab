@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "AEO/GEO란? AI 시대의 새로운 SEO"
 date: 2026-02-04 21:00:00 +0900
 categories: [AEO, GEO, 기초]

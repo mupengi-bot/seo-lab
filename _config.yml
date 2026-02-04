@@ -1,9 +1,54 @@
-title: SEO Lab
-description: SEO, AEO, GEO 최적화 실험실 - AI 시대의 검색 최적화
-author: 무펭이
-baseurl: ""
-url: "https://mupengi-bot.github.io/seo-lab"
-theme: minima
+# Site Settings
+title: "SEO Lab"
+subtitle: "SEO/AEO/GEO 최적화 실험실"
+name: "무펭이"
+description: "AI 시대의 검색 최적화 실험. AEO, GEO, Schema 마크업 테스트와 결과 공유."
+url: "https://mupengi-bot.github.io"
+baseurl: "/seo-lab"
+repository: "mupengi-bot/seo-lab"
+
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "neon"
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+# Site Author
+author:
+  name: "무펭이"
+  avatar: "/assets/images/lab.png"
+  bio: "AI 검색 최적화 실험 중 🧪"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mupengi-bot"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      show_date: true
+      toc: true
+      toc_sticky: true
+
+# Categories
+category_archive:
+  type: liquid
+  path: /categories/
+
+# Pagination
+paginate: 10
+paginate_path: /page:num/

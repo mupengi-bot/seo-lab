@@ -1,0 +1,38 @@
+---
+---
+
+@import "minimal-mistakes/skins/neon";
+@import "minimal-mistakes";
+
+.page__content {
+  font-size: 1.05em;
+  line-height: 1.8;
+}
+
+pre {
+  border-radius: 8px;
+}
+
+blockquote {
+  border-left: 4px solid #7c3aed;
+  background: rgba(124, 58, 237, 0.1);
+  padding: 1em;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 실험 결과 박스 */
+.notice--info {
+  background-color: rgba(124, 58, 237, 0.1);
+  border-left: 4px solid #7c3aed;
+}
+
+/* 테이블 스타일 */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #7c3aed;
+  color: white;
+}
